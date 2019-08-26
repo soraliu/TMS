@@ -10,7 +10,7 @@ export function _onCreate() {
   const runtimeDva = plugins.mergeConfig('dva');
   app = dva({
     history,
-    
+    ...((require('/Users/liuxin/Binance/TMS/project/tms/apps/tms-ui/src/dva.js').config || (() => ({})))()),
     ...(runtimeDva.config || {}),
     ...(window.g_useSSR ? { initialState: window.g_initialData } : {}),
   });
@@ -20,7 +20,8 @@ export function _onCreate() {
     app.use(plugin);
   });
   
-  
+  app.model({ namespace: 'global', ...(require('/Users/liuxin/Binance/TMS/project/tms/apps/tms-ui/src/models/global.js').default) });
+app.model({ namespace: 'users', ...(require('/Users/liuxin/Binance/TMS/project/tms/apps/tms-ui/src/pages/users/models/users.js').default) });
   return app;
 }
 

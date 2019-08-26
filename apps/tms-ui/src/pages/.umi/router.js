@@ -10,13 +10,62 @@ const Router = routerRedux.ConnectedRouter;
 const routes = [
   {
     path: '/',
-    exact: true,
-    component: require('../index.jsx').default,
-  },
-  {
-    path: '/users',
-    exact: true,
-    component: require('../users.jsx').default,
+    component: require('../../layouts/index.js').default,
+    routes: [
+      {
+        path: '/admin',
+        exact: true,
+        component: require('../admin.js').default,
+      },
+      {
+        path: '/delay',
+        exact: true,
+        component: require('../delay.js').default,
+      },
+      {
+        path: '/',
+        exact: true,
+        component: require('../index.js').default,
+      },
+      {
+        path: '/language',
+        exact: true,
+        component: require('../language/index.js').default,
+      },
+      {
+        path: '/login',
+        exact: true,
+        component: require('../login.js').default,
+      },
+      {
+        path: '/namespace',
+        exact: true,
+        component: require('../namespace/index.js').default,
+      },
+      {
+        path: '/project',
+        exact: true,
+        component: require('../project/index.js').default,
+      },
+      {
+        path: '/user',
+        exact: true,
+        component: require('../user/index.js').default,
+      },
+      {
+        path: '/users/page',
+        exact: true,
+        component: require('../users/page.js').default,
+      },
+      {
+        component: () =>
+          React.createElement(
+            require('/Users/liuxin/Binance/TMS/project/tms/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+              .default,
+            { pagesPath: 'src/pages', hasRoutesInConfig: false },
+          ),
+      },
+    ],
   },
   {
     component: () =>

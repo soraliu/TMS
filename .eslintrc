@@ -45,6 +45,7 @@
     "multiline-comment-style": ["error", "starred-block"],
     // 单引号 '优于双引号"
     "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-double"],
     // 对象属性声明的冒号:后，加空格
     "key-spacing": ["error"],
     // 控制逗号前后的空格
@@ -86,5 +87,14 @@
     "no-console": ["error", {
       "allow": ["log", "warn"]
     }],
+    // 禁用必须导入React
+    "react/react-in-jsx-scope": 0,
+    // 禁用函数内没有yield的 generator 函数
+    "require-yield": 0,
+  },
+  "settings": {
+    "react": {
+      "version": "detect",
+    }
   }
 }
