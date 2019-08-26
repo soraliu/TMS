@@ -7,7 +7,7 @@
     "dev:ui": "cd apps/tms-ui; umi dev",
     "prebuild:ui": "yarn lint",
     "build:ui": "cd apps/tms-ui; umi build",
-    "lint": "eslint apps/**/*.js apps/**/*.jsx --fix"
+    "lint": "eslint apps/**/*.js --fix"
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import { Layout, Menu } from 'antd';
 import Icon from '../Iconfont';
@@ -28,6 +29,16 @@ const getIcon = icon => {
 export const getMeunMatcheys = (flatMenuKeys, path) => flatMenuKeys.filter(item => pathToRegexp(item).test(path));
 
 export default class SiderMenu extends PureComponent {
+  static propTypes = {
+    isMobile: PropTypes.bool,
+    collapsed: PropTypes.bool,
+    onCollapse: PropTypes.func,
+    menuData: PropTypes.array,
+    location: PropTypes.object,
+    Authorized: PropTypes.bool,
+    logo: PropTypes.string,
+  };
+
   constructor(props) {
     super(props);
     this.menus = props.menuData;

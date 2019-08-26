@@ -5,7 +5,7 @@ function Admin({ login }) {
   if (login) {
     return <h1>Admin Page</h1>;
   } else {
-    return <Redirect to='/login' />;
+    return <Redirect to="/login" />;
   }
 }
 
