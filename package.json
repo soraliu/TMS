@@ -1,0 +1,51 @@
+{
+  "name": "tms",
+  "version": "0.1.0",
+  "description": "A system to manage translations(i18n).",
+  "main": "index.js",
+  "scripts": {
+    "dev:ui": "cd apps/tms-ui; umi dev",
+    "prebuild:ui": "yarn lint",
+    "build:ui": "cd apps/tms-ui; umi build",
+    "lint": "eslint apps/**/*.js apps/**/*.jsx --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovesora/TMS.git"
+  },
+  "keywords": [
+    "tms",
+    "i18n"
+  ],
+  "author": "liuxin <475212506@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lovesora/TMS/issues"
+  },
+  "homepage": "https://github.com/lovesora/TMS#readme",
+  "dependencies": {
+    "umi": "^2.8.20",
+    "umi-plugin-react": "^1.9.19"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint-config-standard": "^14.0.1",
+    "eslint-config-standard-react": "^9.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^3.0.4",
+    "tslint": "^5.19.0",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.5.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+      "pre-push": "yarn lint"
+    }
+  }
+}
