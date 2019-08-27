@@ -2,14 +2,17 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.1.1",
+  "version": "0.2.0",
   "npmClient": "yarn",
   "npmClientArgs": [
     "--no-lockfile"
   ],
   "command": {
     "version": {
-      "allowBranch": ["master", "release/*"],
+      "allowBranch": [
+        "master",
+        "release/*"
+      ],
       "conventionalCommits": true,
       "forcePublish": "*",
       "message": "chore(release): publish %s"
