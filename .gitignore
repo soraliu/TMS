@@ -65,8 +65,5 @@ tags
 tags.lock
 tags.temp
 
-# Umi
-dist
-
 # Mac
 .DS_Store

@@ -1,0 +1,10 @@
+{
+  "name": "@tms/api-demo",
+  "dependencies": {
+    "egg": "^2.23.0"
+  },
+  "devDependencies": {
+    "egg-bin": "^4.13.0",
+    "egg-mock": "^3.23.1"
+  }
+}

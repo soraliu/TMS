@@ -1,0 +1,354 @@
+[
+  {
+    "name": "Application Start",
+    "start": 1566878465685,
+    "end": 1566878465851,
+    "duration": 166,
+    "pid": 78534,
+    "index": 0
+  },
+  {
+    "name": "Load Plugin",
+    "start": 1566878465689,
+    "end": 1566878465697,
+    "duration": 8,
+    "pid": 78534,
+    "index": 1
+  },
+  {
+    "name": "Load Config",
+    "start": 1566878465697,
+    "end": 1566878465709,
+    "duration": 12,
+    "pid": 78534,
+    "index": 2
+  },
+  {
+    "name": "Require(0) config/config.default.js",
+    "start": 1566878465698,
+    "end": 1566878465698,
+    "duration": 0,
+    "pid": 78534,
+    "index": 3
+  },
+  {
+    "name": "Require(1) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-session/config/config.default.js",
+    "start": 1566878465699,
+    "end": 1566878465699,
+    "duration": 0,
+    "pid": 78534,
+    "index": 4
+  },
+  {
+    "name": "Require(2) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-security/config/config.default.js",
+    "start": 1566878465699,
+    "end": 1566878465700,
+    "duration": 1,
+    "pid": 78534,
+    "index": 5
+  },
+  {
+    "name": "Require(3) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-jsonp/config/config.default.js",
+    "start": 1566878465700,
+    "end": 1566878465701,
+    "duration": 1,
+    "pid": 78534,
+    "index": 6
+  },
+  {
+    "name": "Require(4) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-onerror/config/config.default.js",
+    "start": 1566878465701,
+    "end": 1566878465701,
+    "duration": 0,
+    "pid": 78534,
+    "index": 7
+  },
+  {
+    "name": "Require(5) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-i18n/config/config.default.js",
+    "start": 1566878465701,
+    "end": 1566878465701,
+    "duration": 0,
+    "pid": 78534,
+    "index": 8
+  },
+  {
+    "name": "Require(6) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-watcher/config/config.default.js",
+    "start": 1566878465702,
+    "end": 1566878465702,
+    "duration": 0,
+    "pid": 78534,
+    "index": 9
+  },
+  {
+    "name": "Require(7) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-schedule/config/config.default.js",
+    "start": 1566878465702,
+    "end": 1566878465702,
+    "duration": 0,
+    "pid": 78534,
+    "index": 10
+  },
+  {
+    "name": "Require(8) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-multipart/config/config.default.js",
+    "start": 1566878465703,
+    "end": 1566878465703,
+    "duration": 0,
+    "pid": 78534,
+    "index": 11
+  },
+  {
+    "name": "Require(9) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-development/config/config.default.js",
+    "start": 1566878465703,
+    "end": 1566878465704,
+    "duration": 1,
+    "pid": 78534,
+    "index": 12
+  },
+  {
+    "name": "Require(10) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-logrotator/config/config.default.js",
+    "start": 1566878465704,
+    "end": 1566878465704,
+    "duration": 0,
+    "pid": 78534,
+    "index": 13
+  },
+  {
+    "name": "Require(11) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-static/config/config.default.js",
+    "start": 1566878465704,
+    "end": 1566878465704,
+    "duration": 0,
+    "pid": 78534,
+    "index": 14
+  },
+  {
+    "name": "Require(12) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-view/config/config.default.js",
+    "start": 1566878465704,
+    "end": 1566878465705,
+    "duration": 1,
+    "pid": 78534,
+    "index": 15
+  },
+  {
+    "name": "Require(13) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg/config/config.default.js",
+    "start": 1566878465705,
+    "end": 1566878465706,
+    "duration": 1,
+    "pid": 78534,
+    "index": 16
+  },
+  {
+    "name": "Require(14) config/config.default.js",
+    "start": 1566878465707,
+    "end": 1566878465707,
+    "duration": 0,
+    "pid": 78534,
+    "index": 17
+  },
+  {
+    "name": "Require(15) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-security/config/config.local.js",
+    "start": 1566878465707,
+    "end": 1566878465707,
+    "duration": 0,
+    "pid": 78534,
+    "index": 18
+  },
+  {
+    "name": "Require(16) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-watcher/config/config.local.js",
+    "start": 1566878465707,
+    "end": 1566878465708,
+    "duration": 1,
+    "pid": 78534,
+    "index": 19
+  },
+  {
+    "name": "Require(17) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-view/config/config.local.js",
+    "start": 1566878465708,
+    "end": 1566878465708,
+    "duration": 0,
+    "pid": 78534,
+    "index": 20
+  },
+  {
+    "name": "Require(18) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg/config/config.local.js",
+    "start": 1566878465708,
+    "end": 1566878465708,
+    "duration": 0,
+    "pid": 78534,
+    "index": 21
+  },
+  {
+    "name": "Load extend/agent.js",
+    "start": 1566878465710,
+    "end": 1566878465741,
+    "duration": 31,
+    "pid": 78534,
+    "index": 22
+  },
+  {
+    "name": "Require(19) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-security/app/extend/agent.js",
+    "start": 1566878465711,
+    "end": 1566878465711,
+    "duration": 0,
+    "pid": 78534,
+    "index": 23
+  },
+  {
+    "name": "Require(20) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-schedule/app/extend/agent.js",
+    "start": 1566878465712,
+    "end": 1566878465739,
+    "duration": 27,
+    "pid": 78534,
+    "index": 24
+  },
+  {
+    "name": "Require(21) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-logrotator/app/extend/agent.js",
+    "start": 1566878465740,
+    "end": 1566878465740,
+    "duration": 0,
+    "pid": 78534,
+    "index": 25
+  },
+  {
+    "name": "Load extend/context.js",
+    "start": 1566878465741,
+    "end": 1566878465778,
+    "duration": 37,
+    "pid": 78534,
+    "index": 26
+  },
+  {
+    "name": "Require(22) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-security/app/extend/context.js",
+    "start": 1566878465741,
+    "end": 1566878465748,
+    "duration": 7,
+    "pid": 78534,
+    "index": 27
+  },
+  {
+    "name": "Require(23) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-jsonp/app/extend/context.js",
+    "start": 1566878465749,
+    "end": 1566878465750,
+    "duration": 1,
+    "pid": 78534,
+    "index": 28
+  },
+  {
+    "name": "Require(24) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-i18n/app/extend/context.js",
+    "start": 1566878465750,
+    "end": 1566878465750,
+    "duration": 0,
+    "pid": 78534,
+    "index": 29
+  },
+  {
+    "name": "Require(25) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-multipart/app/extend/context.js",
+    "start": 1566878465750,
+    "end": 1566878465775,
+    "duration": 25,
+    "pid": 78534,
+    "index": 30
+  },
+  {
+    "name": "Require(26) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-view/app/extend/context.js",
+    "start": 1566878465775,
+    "end": 1566878465776,
+    "duration": 1,
+    "pid": 78534,
+    "index": 31
+  },
+  {
+    "name": "Require(27) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg/app/extend/context.js",
+    "start": 1566878465776,
+    "end": 1566878465777,
+    "duration": 1,
+    "pid": 78534,
+    "index": 32
+  },
+  {
+    "name": "Load agent.js",
+    "start": 1566878465778,
+    "end": 1566878465788,
+    "duration": 10,
+    "pid": 78534,
+    "index": 33
+  },
+  {
+    "name": "Require(28) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-security/agent.js",
+    "start": 1566878465778,
+    "end": 1566878465778,
+    "duration": 0,
+    "pid": 78534,
+    "index": 34
+  },
+  {
+    "name": "Require(29) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-onerror/agent.js",
+    "start": 1566878465779,
+    "end": 1566878465779,
+    "duration": 0,
+    "pid": 78534,
+    "index": 35
+  },
+  {
+    "name": "Require(30) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-watcher/agent.js",
+    "start": 1566878465779,
+    "end": 1566878465781,
+    "duration": 2,
+    "pid": 78534,
+    "index": 36
+  },
+  {
+    "name": "Require(31) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-schedule/agent.js",
+    "start": 1566878465782,
+    "end": 1566878465783,
+    "duration": 1,
+    "pid": 78534,
+    "index": 37
+  },
+  {
+    "name": "Require(32) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-development/agent.js",
+    "start": 1566878465783,
+    "end": 1566878465787,
+    "duration": 4,
+    "pid": 78534,
+    "index": 38
+  },
+  {
+    "name": "Require(33) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-logrotator/agent.js",
+    "start": 1566878465787,
+    "end": 1566878465787,
+    "duration": 0,
+    "pid": 78534,
+    "index": 39
+  },
+  {
+    "name": "Require(34) /Users/liuxin/Binance/TMS/project/tms/node_modules/egg/agent.js",
+    "start": 1566878465787,
+    "end": 1566878465788,
+    "duration": 1,
+    "pid": 78534,
+    "index": 40
+  },
+  {
+    "name": "Before Start in /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-watcher/lib/init.js:15:14",
+    "start": 1566878465797,
+    "end": 1566878465841,
+    "duration": 44,
+    "pid": 78534,
+    "index": 41
+  },
+  {
+    "name": "Before Start in /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-schedule/agent.js:12:9",
+    "start": 1566878465799,
+    "end": 1566878465830,
+    "duration": 31,
+    "pid": 78534,
+    "index": 42
+  },
+  {
+    "name": "Before Start in /Users/liuxin/Binance/TMS/project/tms/node_modules/egg-development/agent.js:12:9",
+    "start": 1566878465799,
+    "end": 1566878465850,
+    "duration": 51,
+    "pid": 78534,
+    "index": 43
+  }
+]

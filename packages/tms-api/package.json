@@ -1,0 +1,52 @@
+{
+  "name": "@tms/api",
+  "version": "0.1.0",
+  "description": "A system to manage translations(i18n).",
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-tms-api",
+    "stop": "egg-scripts stop --title=egg-server-tms-api",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint . --fix",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovesora/TMS.git"
+  },
+  "keywords": [
+    "tms",
+    "i18n"
+  ],
+  "author": "liuxin <475212506@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lovesora/TMS/issues"
+  },
+  "homepage": "https://github.com/lovesora/TMS#readme",
+  "dependencies": {
+    "egg": "^2.23.0",
+    "egg-scripts": "^2.11.0"
+  },
+  "devDependencies": {
+    "autod": "^3.1.0",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.13.0",
+    "egg-ci": "^1.13.0",
+    "egg-mock": "^3.23.1",
+    "eslint": "^6.2.2",
+    "eslint-config-egg": "^7.5.0"
+  },
+  "egg": {
+    "declarations": true
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "ci": {
+    "version": "10"
+  }
+}

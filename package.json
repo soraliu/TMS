@@ -2,14 +2,14 @@
   "name": "tms",
   "version": "0.1.0",
   "description": "A system to manage translations(i18n).",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "dev:ui": "cd apps/tms-ui; umi dev",
-    "prebuild:ui": "yarn lint",
-    "build:ui": "cd apps/tms-ui; umi build",
-    "test:ui": "cd apps/tms-ui; umi test",
-    "lint": "eslint apps/**/*.js --fix",
-    "test": "yarn test:ui"
+    "init": "lerna bootstrap",
+    "dev": "lerna exec yarn dev",
+    "test": "lerna exec yarn test",
+    "lint": "lerna exec yarn lint",
+    "prebuild": "yarn lint",
+    "build": "lerna exec yarn build"
   },
   "repository": {
     "type": "git",
@@ -25,42 +25,9 @@
     "url": "https://github.com/lovesora/TMS/issues"
   },
   "homepage": "https://github.com/lovesora/TMS#readme",
-  "dependencies": {
-    "antd": "^3.22.1",
-    "dva": "^2.4.1",
-    "lodash": "^4.17.15",
-    "lodash-decorators": "^6.0.1",
-    "moment": "^2.24.0",
-    "path-to-regexp": "^3.0.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-intl": "^3.1.11",
-    "react-router-breadcrumbs-hoc": "^3.2.2",
-    "umi": "^2.8.20",
-    "umi-plugin-react": "^1.9.19"
-  },
   "devDependencies": {
-    "babel-eslint": "^10.0.2",
-    "babel-plugin-dva-hmr": "^0.3.2",
-    "babel-plugin-import": "^1.12.0",
-    "eslint": "^6.2.2",
-    "eslint-config-standard": "^14.0.1",
-    "eslint-config-standard-react": "^9.0.0",
-    "eslint-config-umi": "^0.1.1",
-    "eslint-plugin-flowtype": "^2.34.1",
-    "eslint-plugin-import": "^2.6.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-standard": "^4.0.1",
     "husky": "^3.0.4",
-    "redbox-react": "^1.4.3",
-    "roadhog": "^2.5.0-beta.4",
-    "tslint": "^5.19.0",
-    "tslint-react": "^4.0.0",
-    "typescript": "^3.5.3"
+    "lerna": "^3.16.4"
   },
   "husky": {
     "hooks": {
