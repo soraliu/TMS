@@ -1,6 +1,6 @@
 {
   "name": "@tms/api",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A system to manage translations(i18n).",
   "main": "index.js",
   "publishConfig": {
