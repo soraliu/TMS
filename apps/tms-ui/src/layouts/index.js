@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-
 import { Layout } from 'antd';
+
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalBreadcrumb from '../components/GlobalBreadcrumb';
-import SiderMenu from '../components/SiderMenu/SiderMenu';
+import SiderMenu from '../components/GlobalSiderMenu/SiderMenu';
 
 import { getMenuData } from '../config/menu';
 import logo from '../assets/logo.svg';
+import logoCollapsed from '../assets/logo-collapsed.svg';
 
 
 const { Content, Header, Footer } = Layout;
@@ -25,6 +26,7 @@ const GlobalLayout = ({
     <Layout>
       <SiderMenu
         logo={logo}
+        logoCollapsed={logoCollapsed}
         collapsed={collapsed}
         menuData={getMenuData()}
         location={location}

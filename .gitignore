@@ -54,16 +54,19 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
+# Dotenv environment variables file
 .env
 
-# next.js build output
+# Next.js build output
 .next
 
-# vim
+# Vim
 tags
 tags.lock
 tags.temp
 
-# umi
+# Umi
 dist
+
+# Mac
+.DS_Store

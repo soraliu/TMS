@@ -37,6 +37,7 @@ export default class SiderMenu extends PureComponent {
     location: PropTypes.object,
     Authorized: PropTypes.bool,
     logo: PropTypes.string,
+    logoCollapsed: PropTypes.string,
   };
 
   constructor(props) {
@@ -194,7 +195,7 @@ export default class SiderMenu extends PureComponent {
   // permission to check
   checkPermissionItem = (authority, ItemDom) => {
     if (this.props.Authorized && this.props.Authorized.check) {
-      const { check } = this.props.Authorized;
+      const [check] = this.props.Authorized;
       return check(authority, ItemDom);
     }
     return ItemDom;
@@ -208,7 +209,7 @@ export default class SiderMenu extends PureComponent {
     });
   };
   render() {
-    const { logo, collapsed, onCollapse } = this.props;
+    const { logo, logoCollapsed, collapsed, onCollapse } = this.props;
     const { openKeys } = this.state;
 
     // Don't show popup menu when it is been collapsed
@@ -235,7 +236,7 @@ export default class SiderMenu extends PureComponent {
       >
         <div className={styles.logo} key="logo">
           <Link to="/">
-            <img src={logo} alt="logo" />
+            <img src={collapsed ? logoCollapsed : logo} alt="logo" />
           </Link>
         </div>
         <Menu
