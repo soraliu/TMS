@@ -104,5 +104,7 @@
       "maxBOF": 0,
     }],
     "no-empty-function": 0,
+    "template-curly-spacing": 0,
+    "indent": 0,
   },
 }

@@ -1,14 +1,15 @@
 {
-  "extends": ["../../.eslintrc", "standard-react"],
-  "rules": {
-    // jsx中要求使用双引号
-    "jsx-quotes": ["error", "prefer-double"],
-    // 禁用必须导入React
-    "react/react-in-jsx-scope": 0,
-  },
+  "extends": ["standard-react", "../../.eslintrc"],
   "settings": {
     "react": {
       "version": "detect",
     }
+  },
+  "rules": {
+    /* react */
+    // jsx中要求使用双引号
+    "jsx-quotes": ["error", "prefer-double"],
+    // 禁用必须导入React
+    "react/react-in-jsx-scope": 0,
   }
 }

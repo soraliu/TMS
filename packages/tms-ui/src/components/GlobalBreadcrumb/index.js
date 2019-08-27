@@ -30,11 +30,11 @@ const routes = [
 
 export default withBreadcrumbs(routes)(({ breadcrumbs }) => (
   <Breadcrumb>
-    {breadcrumbs.map((breadcrumb) => (
+    {breadcrumbs.map(breadcrumb => (
       <Breadcrumb.Item
         key={breadcrumb.key}
         href={breadcrumb.match.url}
-        onClick={(e) => {
+        onClick={e => {
             e.preventDefault();
             router.push(breadcrumb.match.url);
         }}

@@ -4,12 +4,13 @@
   "description": "A system to manage translations(i18n).",
   "private": true,
   "scripts": {
-    "init": "lerna bootstrap",
-    "dev": "lerna exec yarn dev",
-    "test": "lerna exec yarn test",
-    "lint": "lerna exec yarn lint",
+    "postinstall": "lerna bootstrap",
+    "dev": "lerna run dev --stream --parallel",
+    "test": "lerna run test --stream --parallel",
+    "lint": "lerna run lint --stream --parallel",
     "prebuild": "yarn lint",
-    "build": "lerna exec yarn build"
+    "build": "lerna run build --stream --parallel",
+    "clean": "lerna clean; rm -rf node_modules"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,16 @@
   },
   "homepage": "https://github.com/lovesora/TMS#readme",
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.2.2",
+    "eslint-config-egg": "^7.5.0",
+    "eslint-config-standard": "^14.0.1",
+    "eslint-config-standard-react": "^9.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-standard": "^4.0.1",
     "husky": "^3.0.4",
     "lerna": "^3.16.4"
   },

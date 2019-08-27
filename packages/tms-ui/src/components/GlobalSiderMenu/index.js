@@ -5,7 +5,7 @@ import DrawerMenu from 'rc-drawer-menu';
 import SiderMenu from './SiderMenu';
 
 const SiderMenuWrapper = props =>
-  props.isMobile ? (
+  (props.isMobile ? (
     <DrawerMenu
       parent={null}
       level={null}
@@ -20,7 +20,7 @@ const SiderMenuWrapper = props =>
     </DrawerMenu>
   ) : (
     <SiderMenu {...props} />
-  );
+  ));
 
 SiderMenuWrapper.propTypes = {
   isMobile: PropTypes.bool,

@@ -21,13 +21,13 @@ export default {
     },
   },
   effects: {
-    *login(action, { put }) {
+    * login(action, { put }) {
       yield put({
         type: 'signin',
       });
       yield put(routerRedux.push('/admin'));
     },
-    *throwError() {
+    * throwError() {
       throw new Error('hi error');
     },
   },

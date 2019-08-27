@@ -150,9 +150,9 @@ export default class SiderMenu extends PureComponent {
         );
       }
       return null;
-    } else {
-      return <Menu.Item key={item.path}>{this.getMenuItemPath(item)}</Menu.Item>;
     }
+      return <Menu.Item key={item.path}>{this.getMenuItemPath(item)}</Menu.Item>;
+
   };
 
   /**
@@ -187,9 +187,9 @@ export default class SiderMenu extends PureComponent {
   conversionPath = path => {
     if (path && path.indexOf('http') === 0) {
       return path;
-    } else {
-      return `/${path || ''}`.replace(/\/+/g, '/');
     }
+      return `/${path || ''}`.replace(/\/+/g, '/');
+
   };
 
   // permission to check
