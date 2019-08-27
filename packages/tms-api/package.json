@@ -2,6 +2,10 @@
   "name": "@tms/api",
   "version": "0.1.1",
   "description": "A system to manage translations(i18n).",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "start": "egg-scripts start --daemon --title=egg-server-tms-api",
     "stop": "egg-scripts stop --title=egg-server-tms-api",

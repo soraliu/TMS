@@ -6,5 +6,13 @@
   "npmClient": "yarn",
   "npmClientArgs": [
     "--no-lockfile"
-  ]
+  ],
+  "command": {
+    "version": {
+      "allowBranch": ["master", "release/*"],
+      "conventionalCommits": true,
+      "forcePublish": "*",
+      "message": "chore(release): publish %s"
+    }
+  }
 }
