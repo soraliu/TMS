@@ -1,6 +1,6 @@
 {
   "name": "@tms/api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A system to manage translations(i18n).",
   "scripts": {
     "start": "egg-scripts start --daemon --title=egg-server-tms-api",
