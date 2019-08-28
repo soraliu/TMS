@@ -11,7 +11,7 @@
     "prebuild": "yarn lint",
     "build": "lerna run build --stream --parallel",
     "clean": "lerna clean; rm -rf node_modules",
-    "pub:patch": "npm version patch -m 'chore(release): update main package.json'; lerna version patch -y;"
+    "pub:patch": "npm version patch --no-git-tag-version; lerna version patch -y;"
   },
   "repository": {
     "type": "git",
