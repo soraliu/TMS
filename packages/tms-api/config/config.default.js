@@ -38,6 +38,7 @@ module.exports = appInfo => {
       port: 3306,
       database: 'tms',
       username: 'root',
+      password: 'root',
       define: {
         timestamps: false,
         freezeTableName: true,
