@@ -1,6 +1,6 @@
 {
   "name": "tms",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "A system to manage translations(i18n).",
   "private": true,
   "scripts": {
