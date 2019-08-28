@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.5](https://github.com/lovesora/TMS/compare/v0.2.4...v0.2.5) (2019-08-28)
+
+
+### Bug Fixes
+
+* **package.json:** commit change when update main pacakge's version ([278f4ba](https://github.com/lovesora/TMS/commit/278f4ba))
+* **package.json:** fix postpub:patch command ([caf70f3](https://github.com/lovesora/TMS/commit/caf70f3))
+
+
+
+
+
 ## [0.2.4](https://github.com/lovesora/TMS/compare/v0.2.3...v0.2.4) (2019-08-28)
 
 
