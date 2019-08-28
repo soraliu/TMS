@@ -32,8 +32,11 @@
   },
   "homepage": "https://github.com/lovesora/TMS#readme",
   "dependencies": {
+    "cls-hooked": "^4.2.2",
     "egg": "^2.23.0",
-    "egg-scripts": "^2.11.0"
+    "egg-scripts": "^2.11.0",
+    "egg-sequelize": "^5.2.0",
+    "mysql2": "^1.6.5"
   },
   "devDependencies": {
     "autod": "^3.1.0",
