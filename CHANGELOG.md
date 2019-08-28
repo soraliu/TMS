@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+
+
+**Note:** Version bump only for package tms
+
+
+
+
+
 ## [0.2.2](https://github.com/lovesora/TMS/compare/v0.2.1...v0.2.2) (2019-08-28)
 
 
