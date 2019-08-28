@@ -1,6 +1,6 @@
 {
   "name": "tms",
-  "version": "0.1.1",
+  "version": "0.2.2",
   "description": "A system to manage translations(i18n).",
   "private": true,
   "scripts": {
@@ -10,7 +10,8 @@
     "lint": "lerna run lint --stream --parallel",
     "prebuild": "yarn lint",
     "build": "lerna run build --stream --parallel",
-    "clean": "lerna clean; rm -rf node_modules"
+    "clean": "lerna clean; rm -rf node_modules",
+    "pub:patch": "npm version patch -m 'chore(release): update main package.json'; lerna version patch -y;"
   },
   "repository": {
     "type": "git",
