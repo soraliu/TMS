@@ -64,6 +64,7 @@ typings/
 tags
 tags.lock
 tags.temp
+.vim-bookmarks
 
 # Mac
 .DS_Store

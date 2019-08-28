@@ -4,6 +4,6 @@ module.exports = app => {
 
   router.get(`${prefix}/project`, controller.project.list);
   router.post(`${prefix}/project`, controller.project.create);
-  router.put(`${prefix}/project/:id`, controller.project.update);
-  router.delete(`${prefix}/project/:id`, controller.project.delete);
+  router.put(`${prefix}/project/:id`, controller.project.updateById);
+  router.delete(`${prefix}/project/:id`, controller.project.deleteById);
 };
