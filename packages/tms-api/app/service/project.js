@@ -4,14 +4,17 @@ class ProjectService extends Service {
   async list() {
     return await this.ctx.model.Project.findAll({
       where: { deleted: 0 },
+      attributes: ['id', 'name', 'desc'],
       include: [{
         model: this.ctx.model.Language,
+        as: 'langList',
         attributes: ['id', 'name'],
         through: {
           attributes: [],
         },
       }, {
         model: this.ctx.model.Namespace,
+        as: 'nsList',
         attributes: ['id', 'name'],
         through: {
           attributes: [],

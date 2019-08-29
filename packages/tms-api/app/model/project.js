@@ -27,11 +27,13 @@ module.exports = app => {
 
     ProjectModel.belongsToMany(Language, {
       through: ProjLang,
+      as: 'langList',
       foreignKey: 'projId',
       otherKey: 'langId',
     });
     ProjectModel.belongsToMany(Namespace, {
       through: ProjNs,
+      as: 'nsList',
       foreignKey: 'projId',
       otherKey: 'nsId',
     });

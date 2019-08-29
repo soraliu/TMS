@@ -13,6 +13,7 @@ module.exports = app => {
     },
     desc: STRING,
     createdAt: DATE,
+    deleted: INTEGER,
   });
 
   return Language;
