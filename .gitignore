@@ -68,3 +68,6 @@ tags.temp
 
 # Mac
 .DS_Store
+
+# Umi
+.umi

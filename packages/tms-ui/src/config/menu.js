@@ -17,7 +17,7 @@ const menuData = [
     path: 'language',
   }, {
     name: 'Namespace',
-    icon: 'tms-container',
+    icon: 'tms-namespace',
     path: 'namespace',
   }, {
     name: 'User',

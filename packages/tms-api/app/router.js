@@ -16,4 +16,9 @@ module.exports = app => {
   router.post(`${prefix}/language`, controller.language.create);
   router.put(`${prefix}/language/:id`, controller.language.updateById);
   router.delete(`${prefix}/language/:id`, controller.language.deleteById);
+
+  router.get(`${prefix}/permission`, controller.permission.list);
+  router.post(`${prefix}/permission`, controller.permission.create);
+  router.put(`${prefix}/permission/:id`, controller.permission.updateById);
+  router.delete(`${prefix}/permission/:id`, controller.permission.deleteById);
 };

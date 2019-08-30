@@ -1,3 +1,5 @@
+const path = require('path');
+
 export default {
   plugins: [
     ['umi-plugin-react', {
@@ -15,4 +17,12 @@ export default {
     }],
   ],
   outputPath: '../../dist',
+  chainWebpack: config => {
+    config.plugins.delete('progress');
+  },
+  proxy: {
+    '/api': {
+      target: 'http://localhost:7001'
+    }
+  },
 };

@@ -1,0 +1,14 @@
+import { message } from 'antd';
+
+export const dva = {
+  config: {
+    onError(err) {
+      err.preventDefault();
+      message.error(err.message);
+    },
+    initialState: {},
+  },
+  plugins: [
+    // require('dva-logger')(),
+  ],
+};

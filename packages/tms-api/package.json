@@ -9,7 +9,7 @@
   "scripts": {
     "start": "egg-scripts start --daemon --title=egg-server-tms-api",
     "stop": "egg-scripts stop --title=egg-server-tms-api",
-    "dev": "egg-bin dev",
+    "dev": "egg-bin debug",
     "debug": "egg-bin debug",
     "test": "egg-bin test",
     "cov": "egg-bin cov",
