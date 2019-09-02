@@ -11,7 +11,7 @@ import logo from '../assets/logo.svg';
 import logoCollapsed from '../assets/logo-collapsed.svg';
 
 
-const { Content, Header, Footer } = Layout;
+const { Content, Header } = Layout;
 
 const GlobalLayout = ({
   children,
@@ -43,7 +43,6 @@ const GlobalLayout = ({
         <Content style={{ margin: '24px 24px 0', height: '100%' }}>
           {children}
         </Content>
-        <Footer />
       </Layout>
     </Layout>
   );

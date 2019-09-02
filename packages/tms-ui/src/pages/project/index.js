@@ -1,8 +1,9 @@
+import { useState } from 'react';
 import { useSelector } from 'dva';
 import EntityListItem from '@/components/EntityItem';
-import { Button } from 'antd';
+import { Input, Select, Button, Modal, Icon } from 'antd';
 
-const Page = () => {
+const EntityList = () => {
   // set oeprations by permissions
   const { data: permissions } = useSelector(({ permissionList }) => permissionList);
   const operations = [
@@ -25,10 +26,10 @@ const Page = () => {
       },
     },
   ].filter(Boolean);
-  const canCreate = permissions['project:create'];
 
   // transfer state to component's props
-  const { data, isLoading } = useSelector(({ projectList }) => projectList);
+  const { isLoading: loading } = useSelector(({ loading: { effects: { 'projectList/list': isLoading } } }) => ({ isLoading }));
+  const { data } = useSelector(({ projectList }) => projectList);
   const projects = data.map(({ name, desc, langList }) => ({
     iconType: 'tms-project',
     iconColor: '#9E1068',
@@ -38,6 +39,7 @@ const Page = () => {
     operations,
   }));
 
+
   return (
     <div>
       {
@@ -45,13 +47,78 @@ const Page = () => {
           <EntityListItem
             key={project.title || key}
             data={project}
-            isLoading={isLoading}
+            isLoading={loading}
           />
         ))
       }
-      {canCreate && <Button block icon="plus" type="primary" style={{ marginBottom: 24 }} />}
     </div>
   );
 };
+
+const EntityCreate = () => {
+  // permission
+  const { data: permissions } = useSelector(({ permissionList }) => permissionList);
+  const canCreate = permissions['project:create'];
+
+  // modal visible
+  const [visible, setVisible] = useState(false);
+
+  // modal click
+  const handleOk = () => {
+    setVisible(false);
+  };
+  const handleCancel = () => {
+    setVisible(false);
+  };
+
+  // form
+  const handleLangChange = values => {
+    console.log(values);
+  };
+
+  return (
+    <div>
+      {
+        canCreate &&
+          <Button
+            block
+            icon="plus"
+            type="primary"
+            onClick={() => setVisible(true)}
+            style={{ marginBottom: 24 }}
+          />
+      }
+
+      <Modal
+        title="Basic Modal"
+        visible={visible}
+        onOk={handleOk}
+        onCancel={handleCancel}
+      >
+        <Input
+          placeholder="Enter project name"
+          prefix={<Icon type="project" style={{ color: 'rgba(0,0,0,.25)' }} />}
+        />
+        <Input
+          placeholder="Enter description"
+          prefix={<Icon type="read" style={{ color: 'rgba(0,0,0,.25)' }} />}
+        />
+        <Select
+          mode="multiple"
+          style={{ width: '100%' }}
+          placeholder="Select languages"
+          onChange={handleLangChange}
+        />
+      </Modal>
+    </div>
+  );
+};
+
+const Page = () => (
+  <div>
+    <EntityList />
+    <EntityCreate />
+  </div>
+);
 
 export default Page;
